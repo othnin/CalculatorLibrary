@@ -4,7 +4,7 @@ pipeline {
         stage('Installing Packages') {
             steps {
                 script {
-                    sh 'sudo easy_install -s pip'
+                    sh 'source /home/cgrahlmann/miniconda3/bin/activate'
                     sh 'pip install -r requirements.txt'
                 }
             }
