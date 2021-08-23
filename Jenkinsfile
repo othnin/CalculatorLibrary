@@ -4,7 +4,7 @@ pipeline {
         stage('Installing Packages') {
             steps {
                 script {
-                    sh 'sudo easy_install pip'
+                    sh 'sudo easy_install -s pip'
                     sh 'pip install -r requirements.txt'
                 }
             }
